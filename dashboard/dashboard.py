@@ -5,7 +5,7 @@ import seaborn as sns
 
 def load_data():
     """Load dataset"""
-    df = pd.read_csv("main_data.csv")
+    df = pd.read_csv("dashboard/main_data.csv")
     df['order_purchase_timestamp'] = pd.to_datetime(df['order_purchase_timestamp'])
     df['year'] = df['order_purchase_timestamp'].dt.year
     return df
